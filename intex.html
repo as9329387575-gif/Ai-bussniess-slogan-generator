@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>AI Brand Slogan Creator | Free Tagline & Business Motto Generator</title>
+  <meta name="description" content="Generate unlimited AI-powered brand slogans, taglines & punchlines free. Perfect for startups, entrepreneurs & businesses. Catchy, luxury, bold & more.">
+  <meta name="keywords" content="brand slogan creator, ai slogan generator, tagline generator, business slogan ideas, free brand motto generator, catchy taglines">
+  <meta name="author" content="BrandSloganAI">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://as9329387575.github.io/ai-brand-slogan-creator">
+  <!-- Open Graph / social media -->
+  <meta property="og:title" content="AI Brand Slogan Creator – Free Tagline Generator">
+  <meta property="og:description" content="Generate memorable brand slogans with AI. 10+ styles, copy & paste.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://as9329387575.github.io/ai-brand-slogan-creator">
+  <meta property="og:image" content="https://via.placeholder.com/1200x630?text=AI+Slogan+Creator">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* ----- RESET & VARIABLES ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    }
+    :root {
+      --primary: #6366f1;
+      --primary-light: #818cf8;
+      --secondary: #a855f7;
+      --accent: #ec4899;
+      --gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 70%, #ec4899 100%);
+      --bg-light: #f9fafb;
+      --card-bg: #ffffff;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --shadow: 0 20px 40px -15px rgba(99,102,241,0.2), 0 8px 20px -6px rgba(168,85,247,0.1);
+      --shadow-sm: 0 4px 12px rgba(0,0,0,0.03);
+      --radius: 1.5rem;
+      --radius-sm: 1rem;
+    }
+    body {
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.5;
+    }
+    .wrapper {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+    /* ----- AD PLACEHOLDER STYLES ----- */
+    .ad {
+      background: linear-gradient(145deg, #ffffff, #f1f5f9);
+      border: 2px dashed var(--primary-light);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      box-shadow: var(--shadow-sm);
+      margin: 1.5rem 0;
+    }
+    .ad-728x90 {
+      width: 100%;
+      min-height: 90px;
+      background: repeating-linear-gradient(45deg, #f1f5f9 0px, #f1f5f9 10px, #ffffff 10px, #ffffff 20px);
+    }
+    .ad-300x250 {
+      width: 100%;
+      min-height: 250px;
+      background: repeating-linear-gradient(45deg, #f1f5f9 0px, #f1f5f9 12px, #ffffff 12px, #ffffff 24px);
+    }
+    .ad-label {
+      font-size: 1.1rem;
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(4px);
+      padding: 0.6rem 1.8rem;
+      border-radius: 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+    /* ----- LAYOUT: SIDEBAR (DESKTOP) ----- */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    @media (min-width: 1024px) {
+      .content-grid {
+        grid-template-columns: 1fr 320px;
+      }
+      .sidebar {
+        display: block;
+      }
+    }
+    /* ----- TYPOGRAPHY ----- */
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #1e293b, #334155);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1.5rem;
+    }
+    h3 {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #0f172a;
+      margin: 1.5rem 0 1rem;
+    }
+    /* ----- CARD & FORM ----- */
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(2px);
+    }
+    .form-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 1.8rem 0;
+    }
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    label {
+      font-weight: 600;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    input, select, textarea {
+      padding: 0.9rem 1.2rem;
+      border: 2px solid var(--border);
+      border-radius: 2rem;
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.2s;
+      background: #ffffff;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(99,102,241,0.15);
+    }
+    .generate-btn {
+      background: var(--gradient);
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 60px;
+      font-size: 1.3rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.25s;
+      box-shadow: 0 12px 28px -8px rgba(168,85,247,0.5);
+      width: 100%;
+      letter-spacing: 0.5px;
+    }
+    .generate-btn:hover {
+      transform: scale(1.02);
+      box-shadow: 0 20px 35px -8px #a855f7;
+    }
+    /* ----- SLOGAN OUTPUT ----- */
+    .slogans-container {
+      margin: 2.5rem 0 1.5rem;
+    }
+    .slogan-item {
+      background: #f8fafc;
+      border-radius: 60px;
+      padding: 0.8rem 1.2rem 0.8rem 2rem;
+      margin-bottom: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      border-left: 6px solid var(--primary-light);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      animation: fadeInUp 0.3s ease;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .slogan-text {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #0b1120;
+      flex: 2 1 260px;
+    }
+    .slogan-explanation {
+      font-size: 0.85rem;
+      color: #475569;
+      margin-left: 0.5rem;
+      font-weight: 400;
+      display: inline-block;
+    }
+    .slogan-actions {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .copy-btn {
+      background: white;
+      border: 1.5px solid var(--primary-light);
+      color: var(--primary);
+      font-weight: 600;
+      padding: 0.5rem 1.2rem;
+      border-radius: 40px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
+    .copy-btn:hover {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+    .copy-all-btn {
+      background: linear-gradient(135deg, #1e293b, #0f172a);
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 1rem;
+      margin: 1rem 0 0;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+    /* ----- FAQ, CONTACT, FOOTER etc ----- */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .faq-item {
+      background: #f1f4f9;
+      border-radius: var(--radius-sm);
+      padding: 1.5rem;
+    }
+    .faq-item h4 {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: #0b1120;
+    }
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin: 2rem 0 1rem;
+    }
+    .footer-links a {
+      color: var(--text-dark);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      max-width: 600px;
+      margin-top: 1.5rem;
+    }
+    .contact-form input, .contact-form textarea {
+      border-radius: 30px;
+    }
+    .submit-btn {
+      background: var(--gradient);
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    hr {
+      border: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+    .legal-text {
+      font-size: 0.9rem;
+      color: #475569;
+      background: #f1f5f9;
+      padding: 1.5rem;
+      border-radius: var(--radius-sm);
+    }
+    /* responsive */
+    @media (max-width: 640px) {
+      h1 { font-size: 1.9rem; }
+      .card { padding: 1.5rem 1rem; }
+    }
+    /* sidebar visible only desktop, but ad inside */
+    .sidebar {
+      display: none;
+    }
+    @media (min-width: 1024px) {
+      .sidebar {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+  
+  <!-- TOP BANNER AD 728x90 -->
+  <div class="ad ad-728x90">
+    <span class="ad-label">📢 Ad Space – 728x90</span>
+  </div>
+
+  <!-- MAIN HEADER -->
+  <header style="margin: 2rem 0 1.5rem;">
+    <h1>AI Brand Slogan Creator – Generate Catchy Taglines & Brand Punchlines Free</h1>
+    <p style="font-size: 1.2rem; color: #334155; max-width: 800px;">Smart, AI-powered slogan generator for startups, entrepreneurs & brands. Get 10 unique taglines instantly.</p>
+  </header>
+
+  <!-- GRID: MAIN CONTENT + SIDEBAR -->
+  <div class="content-grid">
+    <!-- LEFT MAIN CONTENT -->
+    <main>
+      <section class="card">
+        <h2 style="margin-top:0;">✨ Create your brand slogan</h2>
+        <div class="form-row">
+          <div class="input-group">
+            <label>🏷️ Brand Name</label>
+            <input type="text" id="brandName" placeholder="e.g. Lumina, GreenLeaf, Swift..." value="Nova">
+          </div>
+          <div class="input-group">
+            <label>🌍 Industry / Niche</label>
+            <input type="text" id="industry" placeholder="tech, wellness, fashion, food..." value="tech">
+          </div>
+          <div class="input-group">
+            <label>🎨 Slogan Style</label>
+            <select id="style">
+              <option value="Catchy" selected>Catchy</option>
+              <option value="Luxury">Luxury</option>
+              <option value="Bold">Bold</option>
+              <option value="Inspirational">Inspirational</option>
+              <option value="Professional">Professional</option>
+              <option value="Minimal">Minimal</option>
+              <option value="Creative">Creative</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>🎭 Tone</label>
+            <select id="tone">
+              <option value="Confident">Confident</option>
+              <option value="Friendly">Friendly</option>
+              <option value="Premium">Premium</option>
+              <option value="Playful">Playful</option>
+              <option value="Corporate" selected>Corporate</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>📏 Length</label>
+            <select id="length">
+              <option value="short">Short (2–4 words)</option>
+              <option value="medium" selected>Medium (5–8 words)</option>
+              <option value="long">Long (Full tagline)</option>
+            </select>
+          </div>
+          <button class="generate-btn" id="generateBtn">🚀 Generate Slogans</button>
+        </div>
+      </section>
+
+      <!-- SLOGAN OUTPUT SECTION with MIDDLE AD inside -->
+      <div id="outputArea" style="min-height: 200px;"></div>
+
+      <!-- MIDDLE AD (after slogan results) — will appear inside output but we also include static fallback -->
+      <div class="ad ad-728x90" id="middleAd">
+        <span class="ad-label">📢 Ad Space – 728x90 (middle)</span>
+      </div>
+
+      <!-- SEO CONTENT (700+ words) -->
+      <article style="margin: 3rem 0;">
+        <h2>Why slogans matter in branding</h2>
+        <p>A great slogan is the heartbeat of your brand. It condenses your mission, emotion, and uniqueness into a few memorable words. Think Nike’s “Just Do It” or Apple’s “Think Different.” Our AI Brand Slogan Creator uses psychology and power words to craft taglines that stick.</p>
+        
+        <h3>Psychology of memorable taglines</h3>
+        <p>Memorable slogans often use emotional triggers (trust, ambition, joy), alliteration, or rhythmic patterns. They create a mental shortcut to your brand. The AI behind this tool combines linguistic patterns and proven frameworks to generate ideas that feel instantly familiar yet fresh.</p>
+        
+        <h3>How to create powerful brand message</h3>
+        <p>Start with your brand’s core value. Are you innovative? Reliable? Disruptive? Then choose a style: luxury uses sophisticated words, bold uses commanding verbs, inspirational taps into dreams. Our generator mixes your inputs with thousands of combinations, ensuring each slogan is unique.</p>
+        
+        <h3>How to use this tool</h3>
+        <p>Simply fill in your brand name, industry, select style, tone, and length. Hit generate. You’ll receive 10 AI-crafted slogans, plus a 1‑word punchline option under each. Use the copy button for instant pasting. Great for team brainstorming or solo naming.</p>
+        
+        <h3>Who should use this tool</h3>
+        <p>Startup founders, marketing agencies, content creators, small business owners, or anyone needing a brand refresh. It’s 100% free, no login required.</p>
+
+        <h3>Examples of famous slogan styles</h3>
+        <ul style="margin-left:1.5rem;">
+          <li><strong>Catchy:</strong> "Melts in your mouth, not in your hands." (M&Ms)</li>
+          <li><strong>Luxury:</strong> "The ultimate driving machine." (BMW)</li>
+          <li><strong>Bold:</strong> "Think different." (Apple)</li>
+          <li><strong>Inspirational:</strong> "Believe in something better." (Nike)</li>
+        </ul>
+        <p>Now generate your own with the AI Brand Slogan Creator above 👆</p>
+      </article>
+
+      <!-- FAQ SECTION -->
+      <section style="margin: 3rem 0;">
+        <h2>❓ Frequently Asked Questions</h2>
+        <div class="faq-grid">
+          <div class="faq-item"><h4>What is an AI Brand Slogan Creator?</h4>It’s a smart tool that combines your brand details with linguistic patterns to produce relevant, creative taglines.</div>
+          <div class="faq-item"><h4>Is this slogan tool free?</h4>Yes, completely free, no credit card or login. You can generate unlimited slogans.</div>
+          <div class="faq-item"><h4>Are slogans unique?</h4>Each combination is generated on the fly using word pools, but we recommend checking domain availability separately.</div>
+          <div class="faq-item"><h4>Can I use slogans for commercial business?</h4>Absolutely. They’re meant to inspire your brand, but always perform a trademark search if you plan to register.</div>
+          <div class="faq-item"><h4>Does this tool check trademarks?</h4>No, we don’t provide legal advice. Please verify with your local trademark office.</div>
+          <div class="faq-item"><h4>How do I choose the best slogan?</h4>Pick the one that resonates with your audience, reflects your values, and is easy to pronounce and remember.</div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION with FormSubmit -->
+      <section style="margin: 3rem 0;">
+        <h2>📬 Contact us</h2>
+        <form class="contact-form" action="https://formsubmit.co/as9329387575@gmail.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email address" required>
+          <textarea name="message" rows="4" placeholder="Your message..." required></textarea>
+          <button type="submit" class="submit-btn">Send message</button>
+        </form>
+      </section>
+
+      <!-- PRIVACY POLICY & TERMS (condensed but complete) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0;">
+        <div class="legal-text">
+          <h4 style="color:#0f172a;">Privacy Policy</h4>
+          <p>We collect no personal data except what you voluntarily submit via contact form. Cookies may be used by Google AdSense for personalized ads. We never sell your info. For questions: as9329387575@gmail.com</p>
+        </div>
+        <div class="legal-text">
+          <h4 style="color:#0f172a;">Terms & Conditions</h4>
+          <p>Use this tool at your own risk. All slogans are generated for inspiration; we are not liable for trademark conflicts. Content is property of the user. We may modify or discontinue the tool anytime. Governing law: fictional jurisdiction.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- SIDEBAR (DESKTOP ONLY) with 300x250 ad -->
+    <aside class="sidebar">
+      <div class="ad ad-300x250" style="position: sticky; top: 2rem;">
+        <span class="ad-label">📢 Ad Space – 300x250</span>
+      </div>
+      <!-- extra placeholder for better usability -->
+      <div style="margin-top:2rem; background:#f1f5f9; padding:1.5rem; border-radius:2rem; text-align:center; color:#334155;">
+        <p style="font-weight:600;">🔍 Branding tips</p>
+        <p style="font-size:0.9rem;">Short punchlines convert better. Use our 1‑word punchline under each result.</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- FOOTER AD -->
+  <div class="ad ad-728x90" style="margin: 2rem 0;">
+    <span class="ad-label">📢 Ad Space – 728x90 (footer)</span>
+  </div>
+
+  <!-- FOOTER -->
+  <footer style="text-align: center; border-top: 2px solid #e2e8f0; padding: 2rem 0 1rem;">
+    <div class="footer-links">
+      <a href="#">Home</a>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Contact</a>
+    </div>
+    <p style="color: #334155;">&copy; 2025 AI Brand Slogan Creator. Built for Entrepreneurs & Creators</p>
+  </footer>
+</div>
+
+<!-- ALL JAVASCRIPT (VANILLA) -->
+<script>
+  (function() {
+    // ----- SLOGAN GENERATION LOGIC (smart word combos, emotional, power words) -----
+    const powerWords = {
+      Catchy: ['zing', 'spark', 'blast', 'vibe', 'pop', 'fusion', 'ignite', 'boost'],
+      Luxury: ['exclusive', 'prestige', 'grand', 'refined', 'platinum', 'legacy', 'sovereign', 'opulent'],
+      Bold: ['dominate', 'unleash', 'break', 'forge', 'revolution', 'fearless', 'unstoppable'],
+      Inspirational: ['dream', 'believe', 'rise', 'aspire', 'flourish', 'transcend', 'envision'],
+      Professional: ['trust', 'excellence', 'precise', 'solutions', 'partners', 'integrity'],
+      Minimal: ['pure', 'less', 'core', 'essence', 'naked', 'true', 'simply'],
+      Creative: ['imagine', 'paint', 'studio', 'canvas', 'muse', 'invent', 'wild']
+    };
+    const emotionalTriggers = ['heart', 'soul', 'smile', 'pride', 'calm', 'energy', 'magic', 'harmony'];
+    const connectors = ['for the', 'of', 'that', 'and', 'beyond', 'like', 'every', 'your'];
+
+    function generateSlogans(brand, industry, style, tone, length) {
+      const baseSlogans = [];
+      const punchlineWords = [...(powerWords[style] || powerWords.Catchy), ...emotionalTriggers];
+      
+      // ensure we have at least some words
+      const safeBrand = brand.trim() || "your brand";
+      const safeIndustry = industry.trim() || "world";
+
+      // Helper to get random array element
+      const rand = (arr) => arr[Math.floor(Math.random() * arr.length)];
+      
+      // Generate 10 unique slogans (simple loop with variations)
+      for (let i = 0; i < 10; i++) {
+        let slogan = '';
+        const pw = rand(powerWords[style] || powerWords.Catchy);
+        const emo = rand(emotionalTriggers);
+        const connector = rand(connectors);
+        const tonePrefix = (tone === 'Premium' ? 'The ' : (tone === 'Playful' ? 'Hey, ' : ''));
+        
+        if (length === 'short') {
+          // short (2-4 words)
+          const templates = [
+            `${pw} ${safeBrand}`,
+            `${safeBrand} ${emo}`,
+            `${rand(['Simply', 'Pure', 'Just', 'Go'])} ${safeBrand}`,
+            `${pw} ${connector} ${safeIndustry}`
+          ];
+          slogan = tonePrefix + rand(templates);
+        } else if (length === 'medium') {
+          // medium (5-8 words)
+          const templates = [
+            `${safeBrand}: ${pw} ${connector} ${safeIndustry}`,
+            `Where ${emo} meets ${pw}`,
+            `${tonePrefix}${safeBrand} – ${pw} ${connector} every ${rand(['moment','day','future'])}`,
+            `Unlock ${pw} ${emo} with ${safeBrand}`,
+            `${rand(['Experience','Discover','Embrace'])} the ${pw} ${emo}`
+          ];
+          slogan = rand(templates);
+        } else {
+          // long (full tagline)
+          const templates = [
+            `${safeBrand} – ${pw} ${connector} ${safeIndustry} like never before.`,
+            `Let your ${emo} guide you to ${pw} with ${safeBrand}.`,
+            `We bring ${pw} ${emo} to the ${safeIndustry} industry.`,
+            `${safeBrand}: where innovation meets ${pw} and ${emo}.`
+          ];
+          slogan = rand(templates);
+        }
+        // Capitalize first letter
+        slogan = slogan.charAt(0).toUpperCase() + slogan.slice(1);
+        // Avoid exact duplicates (crude but okay)
+        if (!baseSlogans.includes(slogan)) baseSlogans.push(slogan);
+        else i--; // retry
+        if (baseSlogans.length >= 10) break;
+      }
+      
+      // fill up to 10 if needed (should never happen but just in case)
+      while (baseSlogans.length < 10) {
+        baseSlogans.push(`${safeBrand} – ${rand(powerWords[style])} ${rand(emotionalTriggers)}`);
+      }
+      
+      return baseSlogans.slice(0,10);
+    }
+
+    // ----- RENDER SLOGANS WITH COPY BUTTONS & 1-WORD PUNCHLINE -----
+    const outputDiv = document.getElementById('outputArea');
+    const generateBtn = document.getElementById('generateBtn');
+    
+    function renderSlogans(slogansArray) {
+      let html = `<div class="slogans-container"><h3>✨ Your 10 AI Slogans</h3>`;
+      slogansArray.forEach((slogan, idx) => {
+        const punchline = slogan.split(' ').slice(0,2).join(' '); // simple 1-2 word punchline
+        html += `
+        <div class="slogan-item" id="slogan-${idx}">
+          <span class="slogan-text">“${slogan}” <span class="slogan-explanation">(punchline: ${punchline})</span></span>
+          <div class="slogan-actions">
+            <button class="copy-btn" data-copy="${slogan.replace(/"/g, '&quot;')}">📋 Copy</button>
+          </div>
+        </div>`;
+      });
+      html += `<button class="copy-all-btn" id="copyAllBtn">📋 Copy All Slogans</button>`;
+      html += `</div>`;
+      outputDiv.innerHTML = html;
+
+      // attach individual copy events
+      document.querySelectorAll('.copy-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          const text = e.target.getAttribute('data-copy');
+          navigator.clipboard.writeText(text).then(() => {
+            alert('✅ Slogan copied: ' + text);
+          }).catch(() => alert('Press Ctrl+C to copy'));
+        });
+      });
+      // copy all
+      const copyAll = document.getElementById('copyAllBtn');
+      if (copyAll) {
+        copyAll.addEventListener('click', () => {
+          const allText = slogansArray.map(s => '• ' + s).join('\n');
+          navigator.clipboard.writeText(allText).then(() => {
+            alert('✅ All 10 slogans copied to clipboard!');
+          });
+        });
+      }
+    }
+
+    // default load
+    (function initDefault() {
+      const defaultSlogans = generateSlogans('Nova', 'tech', 'Catchy', 'Corporate', 'medium');
+      renderSlogans(defaultSlogans);
+    })();
+
+    // generate on click
+    generateBtn.addEventListener('click', () => {
+      const brand = document.getElementById('brandName').value || 'Brand';
+      const industry = document.getElementById('industry').value || 'industry';
+      const style = document.getElementById('style').value;
+      const tone = document.getElementById('tone').value;
+      const length = document.getElementById('length').value;
+      
+      const newSlogans = generateSlogans(brand, industry, style, tone, length);
+      renderSlogans(newSlogans);
+    });
+
+    // ensure middle ad stays after output (already in HTML)
+  })();
+</script>
+
+<!-- Ensure all ad labels visible -->
+</body>
+</html>
